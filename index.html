@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Doodlebook</title>
+  <meta name="description" content="A sketchbook of 51 generative doodle patterns you can tune, colour and print on any paper size." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23f7d774'/%3E%3Cpath d='M7 20c3-8 6 4 9-4s6 4 9-2' fill='none' stroke='%2322201c' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style id="page-style"></style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#/">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><rect x="3" y="4" width="34" height="32" rx="9" fill="var(--butter)" stroke="var(--ink)" stroke-width="2"/><path d="M10 25c3-9 6 5 9.5-4s6 5 10.5-3" fill="none" stroke="var(--ink)" stroke-width="2.4" stroke-linecap="round"/><circle cx="29" cy="13" r="2.4" fill="var(--coral)"/></svg>
+      <span>Doodlebook</span>
+    </a>
+    <nav class="nav">
+      <a href="#/" data-nav="gallery">Library</a>
+      <a href="#/saved" data-nav="saved"><span class="long">My </span>sketchbook <span class="badge" id="saved-count">0</span></a>
+    </nav>
+  </header>
+
+  <main id="view"></main>
+
+  <footer class="foot">
+    <span class="hand">made with ink, paper &amp; a little randomness</span>
+  </footer>
+
+  <div id="print-root" aria-hidden="true"></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/engine.js"></script>
+  <script src="js/pdf.js"></script>
+  <script src="js/palettes.js"></script>
+  <script src="js/patterns.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
